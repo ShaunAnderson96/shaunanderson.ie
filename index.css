@@ -1,0 +1,112 @@
+html {
+  background-color: black;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  body {
+    opacity: 1;
+    transition: 1s opacity;
+  } 
+  body.fade-out {
+    opacity: 0;
+    transition: none;
+  }
+  
+  .img-1, .img-2, .img-3 {
+    position: relative;
+    opacity: 0.80;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .img-1 {
+    background-image: url("img/city.jpg");
+    min-height: 100%;
+  }
+  
+  .img-2 {
+    background-image: url("img/cliff.jpg");
+    min-height: 400px;
+  }
+  
+  .img-3 {
+    background-image: url("img/autumn.jpg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    /* opacity: 0.80; */
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 33, 33);
+    padding: 15px;
+    font-size: 25px;
+    letter-spacing: 6px;
+  }
+
+  .name{
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: rgb(255, 255, 255);
+  }
+
+  #typed2{
+    color: #000;
+    /* padding-top: 10px; */
+    padding-left:40%;
+    text-align: center;
+  }
+  .endCaption{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .copy{
+    color: #ddd;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 6%;
+  }
+
+  .typed-cursor {
+    color: #777;
+    /* height: 30px;
+    width:30px; */
+    font-size: 35px;
+    animation: blink 1.2s infinite;
+  }
+  @keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+      .img-1, .img-2, .img-3 {
+          background-attachment: scroll;
+      }
+  }
